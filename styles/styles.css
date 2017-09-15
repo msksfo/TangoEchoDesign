@@ -7,6 +7,7 @@ body {
 }
 
 nav {
+	border: 1px solid purple;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 8px;
@@ -24,10 +25,11 @@ nav a:hover {
 
 .nav-item {
 	font-size: 1.5rem;
-	display: inline-block;
+	display inline-block;
 }
 
 .logo {
+	border: 1px solid blue;
 	width: 300px;
 	font-size: 1.7rem;
 	border-bottom: 2px solid #545454;
@@ -56,11 +58,13 @@ nav a:hover {
 }
 
 .header {
+	border: 1px solid red;
 	font-family: 'Cormorant SC', serif;
 	background-color: gray;
 	color: white;
 	padding: 1.5em 2em 2em 2em;
 }
+
 
 .about {
 	display: grid;
@@ -117,7 +121,11 @@ footer {
 	left: 20%;
 	margin-top: 30vh;
 	font-size: 1.3rem;
-	padding: 1rem;
+	padding: 0 1.4rem 1.4rem 1.4rem;
+}
+
+.modalInner h2 {
+	margin-top: 0;
 }
 
 #close {
