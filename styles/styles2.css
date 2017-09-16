@@ -4,6 +4,8 @@ body {
 	font-size: 1.1rem;
 	font-family: sans-serif;
 	font-weight: 300;
+	max-width: 1280px;
+	margin: 0 auto;
 }
 
 nav {
@@ -105,8 +107,8 @@ nav a:hover {
 .portfolio {
 	background-color: #545454;
 	color: white;
-	flex 1 1 20%;
 	padding: 1em;
+	padding-bottom: 2.5em;
 }
 
 .portfolio a {
@@ -123,12 +125,21 @@ nav a:hover {
 	font-family: 'Cormorant SC', serif;
 	font-weight: 300;
 	text-align: center;
+	margin-bottom: 3rem;
 }
 
 .grid {
 	display: grid;
 	grid-template-columns: 20% 60% 20%;
 	grid-row-gap: 3rem;
+}
+
+.image-container {
+	transition: transform 1s ease;
+}
+
+.image-container:hover {
+	transform: scale(1.3);
 }
 
 .image {
@@ -175,6 +186,8 @@ footer {
 }
 
 .modal {
+	max-width: 1280px;
+	margin: 0 auto;
 	position: fixed;
 	top: 0;
 	left: 0;
