@@ -7,6 +7,9 @@ var home = document.getElementById('home');
 var about = document.getElementById('about');
 var portfolio = document.getElementById('portfolio');
 
+var description = document.querySelectorAll('.description');
+var portfolioModal = document.querySelectorAll('.portfolio-modal');
+
 
 window.onbeforeunload = function(){
 	window.scrollTo(0, 0);
@@ -27,4 +30,44 @@ contactLink.addEventListener('click', function(){
 close.addEventListener('click', function(){
 	modal.classList.remove('is-visible');
 });
+
+/*
+description.addEventListener('mouseover', function(){
+	portfolioModal.style.visibility = 'visible';
+});
+
+portfolioModal.addEventListener('mouseout', function(){
+	portfolioModal.style.visibility = 'hidden';
+});
+*/
+
+function makeVisible(){
+	var paragraph = this.parentNode;
+	var div = paragraph.nextElementSibling;
+	//div.style.visibility = 'visible';
+	div.classList.add('make-visible');
+}
+
+function hide(){
+	//this.style.visibility = 'hidden';
+	this.classList.remove('make-visible')
+}
+
+
+
+for(var i = 0; i < description.length; i++){
+	description[i].addEventListener('mouseover', makeVisible)
+}
+
+for(var i = 0; i < portfolioModal.length; i++){
+	portfolioModal[i].addEventListener('mouseout', hide)
+}
+
+
+
+
+
+
+
+
 
