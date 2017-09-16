@@ -33,6 +33,7 @@ nav a {
 	color: rgba(255, 255, 255, .6);
 }
 
+
 nav a:hover {
 	color: purple;
 	opacity: .6;
@@ -104,9 +105,67 @@ nav a:hover {
 .portfolio {
 	background-color: #545454;
 	color: white;
-	flex: 1 1 20%;
-	padding: 2em;
+	flex 1 1 20%;
+	padding: 1em;
 }
+
+.portfolio a {
+	color: rgba(255, 255, 255, .5);
+	text-decoration: none;
+}
+
+.portfolio a:hover {
+	color: teal;
+	color purple;
+}
+
+.portfolio h2 {
+	font-family: 'Cormorant SC', serif;
+	font-weight: 300;
+	text-align: center;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	grid-row-gap: 3rem;
+}
+
+.image {
+	display: block;
+	width: 500px;
+	max-width: 100%;
+	height: auto;
+}
+
+.one {
+	grid-column: 2;
+	border: 1px solid white;
+	padding: 5px;
+}
+
+.two {
+	grid-column: 2;
+	grid-row 2;
+	border: 1px solid white;
+	padding: 5px;
+}
+
+.three {
+	grid-column: 2;
+	grid-row: 3;
+	border: 1px solid white;
+	padding: 5px;
+}
+
+.four {
+	grid-column: 2;
+	grid-row: 4;
+	border: 1px solid white;
+	padding: 5px;
+}
+
+
 
 footer {
 	background-color: gray;
@@ -149,8 +208,9 @@ footer {
 
 #close {
 	position: absolute;
+	z-index: 12;
 	top: 15px;
-	right: 15px;
+	right: 7px;
 	font-size: 2rem;
 	transform: scaleX(1.2);
 	transform-origin: 100%;
@@ -281,6 +341,27 @@ footer {
 		font-size: 1.3rem;
 		padding: 0 1.4rem 1.4rem 1.4rem;
 	}
+
+	.grid {
+		grid-template-columns: 10% 35% 10% 35% 10%;
+		grid-row-gap: 5rem;
+	}
+
+	.two {
+		grid-column: 4;
+	}
+
+	.three {
+		grid-row: 2; 
+		grid-column: 2;
+	}
+
+	.four {
+		grid-row: 2;
+		grid-column: 4;
+	}
+
+
 }
 
 @media all and (min-width: 990px){
