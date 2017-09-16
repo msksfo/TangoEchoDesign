@@ -7,6 +7,7 @@ body {
 	max-width: 1280px;
 	margin: 0 auto;
 }
+ /*--------- Header and Nav Styling ----------------*/
 
 nav {
 	display: grid;
@@ -34,7 +35,6 @@ nav a {
 	text-decoration: none;
 	color: rgba(255, 255, 255, .6);
 }
-
 
 nav a:hover {
 	color: purple;
@@ -84,6 +84,9 @@ nav a:hover {
 	background-color: gray;
 	color: white;
 }
+/*-----------------------------------------------------*/
+
+/*-------------About Section Styling ------------------*/
 
 .about {
 	display: grid;
@@ -103,6 +106,9 @@ nav a:hover {
 	height: auto;
 }
 
+/*-----------------------------------------------------*/
+
+/*------------ Portfolio Section Styling --------------*/
 
 .portfolio {
 	background-color: #545454;
@@ -111,9 +117,10 @@ nav a:hover {
 	padding-bottom: 2.5em;
 }
 
-.portfolio a {
+.portfolio p, .portfolio a {
 	color: rgba(255, 255, 255, .5);
 	text-decoration: none;
+	text-align: center;
 }
 
 .portfolio a:hover {
@@ -175,7 +182,9 @@ nav a:hover {
 	border: 1px solid white;
 	padding: 5px;
 }
+/*---------------------------------------------------*/
 
+/*---------- Footer Styling -------------------------*/
 
 
 footer {
@@ -184,6 +193,10 @@ footer {
 	padding: 1.2em 2em;
 	text-align: center;
 }
+
+/*----------------------------------------------------*/
+
+/*---------------- Modal Styling ---------------------*/
 
 .modal {
 	max-width: 1280px;
@@ -256,9 +269,9 @@ footer {
 	margin-left: 7px;
 	margin-right: 7px;
 }
+/*-----------------------------------------------------------------------*/
 
-
-/*--------------------------------  MEDIA QUERIES  ---------------------------------*/
+/*--------------------------------  MEDIA QUERIES  ----------------------*/
 
 @media all and (min-width: 365px){
 	nav {
