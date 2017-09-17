@@ -58,6 +58,7 @@ nav a:hover {
 
 .airplane {
 	font-size: 3rem;
+	font-family: 'Zapf Dingbats';
 	display: inline-block;
 	position: relative;
 	transform: translate(-90px, 37px);
