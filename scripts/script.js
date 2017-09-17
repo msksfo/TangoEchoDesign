@@ -57,10 +57,12 @@ function hide(){
 
 for(var i = 0; i < description.length; i++){
 	description[i].addEventListener('mouseover', makeVisible)
+	description[i].addEventListener('click', makeVisible)
 }
 
 for(var i = 0; i < portfolioModal.length; i++){
 	portfolioModal[i].addEventListener('mouseout', hide)
+	portfolioModal[i].addEventListener('click', hide)
 }
 
 
