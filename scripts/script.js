@@ -41,28 +41,28 @@ portfolioModal.addEventListener('mouseout', function(){
 });
 */
 
-function makeVisible(){
+function makeVisible(e){
 	var paragraph = this.parentNode;
 	var div = paragraph.nextElementSibling;
-	//div.style.visibility = 'visible';
 	div.classList.add('make-visible');
+	console.log(e);
 }
 
-function hide(){
-	//this.style.visibility = 'hidden';
+function hide(e){
 	this.classList.remove('make-visible')
+	console.log(e);
 }
 
 
 
 for(var i = 0; i < description.length; i++){
 	description[i].addEventListener('mouseover', makeVisible)
-	description[i].addEventListener('click', makeVisible)
+	//description[i].addEventListener('click', makeVisible)
 }
 
 for(var i = 0; i < portfolioModal.length; i++){
 	portfolioModal[i].addEventListener('mouseout', hide)
-	portfolioModal[i].addEventListener('click', hide)
+	//portfolioModal[i].addEventListener('click', hide)
 }
 
 
