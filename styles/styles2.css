@@ -79,6 +79,7 @@ nav a:hover {
 	position: sticky;
 	position: -webkit-sticky;
 	top: 0;
+	z-index: 5;
 	overflow: hidden;
 	font-family: 'Cormorant SC', serif;
 	background-color: gray;
@@ -120,8 +121,13 @@ nav a:hover {
 .portfolio p, .portfolio a {
 	color: rgba(255, 255, 255, .5);
 	text-decoration: none;
-	text-align: center;
 }
+
+.position-relative > p {
+	margin-bottom: 1.7rem;
+	text-align: left;
+}
+
 
 .portfolio a:hover {
 	color: teal;
@@ -201,11 +207,12 @@ nav a:hover {
 	left: 0;
 	height: 100%;
 	background-color: #545454;
-	z-index: 5;
+	z-index: 3;
 }
 .portfolio-modal p {
 	color: white;
 	opacity: 1;
+	text-align: center;
 	margin-top: .3rem;
 	overflow: hidden;
 	font-size: 1rem;
@@ -369,6 +376,10 @@ footer {
 
 	#close {
 		right: 20px;
+	}
+
+	.position-relative > p {
+	text-align: center;
 	}
 }
 
