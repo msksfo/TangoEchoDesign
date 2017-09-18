@@ -11,6 +11,7 @@ var description = document.querySelectorAll('.description');
 var portfolioModal = document.querySelectorAll('.portfolio-modal');
 
 
+
 window.onbeforeunload = function(){
 	window.scrollTo(0, 0);
 }
@@ -31,15 +32,6 @@ close.addEventListener('click', function(){
 	modal.classList.remove('is-visible');
 });
 
-/*
-description.addEventListener('mouseover', function(){
-	portfolioModal.style.visibility = 'visible';
-});
-
-portfolioModal.addEventListener('mouseout', function(){
-	portfolioModal.style.visibility = 'hidden';
-});
-*/
 
 function makeVisible(){
 	var paragraph = this.parentNode;
@@ -52,7 +44,6 @@ function hide(){
 }
 
 
-
 for(var i = 0; i < description.length; i++){
 	description[i].addEventListener('mouseover', makeVisible)
 	description[i].addEventListener('click', makeVisible)
@@ -62,10 +53,6 @@ for(var i = 0; i < portfolioModal.length; i++){
 	portfolioModal[i].addEventListener('mouseout', hide)
 	portfolioModal[i].addEventListener('click', hide)
 }
-
-
-
-
 
 
 
