@@ -38,7 +38,7 @@ nav a {
 
 nav a:hover {
 	color: purple;
-	opacity: .6;
+	opacity: 1;
 }
 
 .nav-item {
@@ -99,6 +99,7 @@ nav a:hover {
 }
 
 .profilePicture {
+	box-shadow: 0 0 5px black;
 	margin: 0 auto;
 	margin-bottom: 1.2rem;
 	border: 1px solid black;
@@ -119,6 +120,10 @@ nav a:hover {
 	padding-bottom: 2.5em;
 }
 
+.image-container {
+	box-shadow: 0 0 5px black;
+}
+
 .portfolio p, .portfolio a {
 	color: rgba(255, 255, 255, .5);
 	text-decoration: none;
@@ -128,7 +133,6 @@ nav a:hover {
 	margin-bottom: 1.7rem;
 	text-align: left;
 }
-
 
 .portfolio a:hover {
 	color: teal;
@@ -153,7 +157,6 @@ nav a:hover {
 	max-width: 100%;
 	height: auto;
 	margin: 0 auto;
-	
 }
 
 
