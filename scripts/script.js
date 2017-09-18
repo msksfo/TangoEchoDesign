@@ -65,7 +65,7 @@ if (mq.matches){
 	for (var i = 0; i < imageContainer.length; i++){
 		imageContainer[i].addEventListener('mouseenter', function(){
 			portfolioTitle.style.transition = 'all 1s';
-			portfolioTitle.style.marginBottom = '5rem';
+			portfolioTitle.style.marginBottom = '4rem';
 		})
 		imageContainer[i].addEventListener('mouseleave', function(){
 			portfolioTitle.style.transition = 'all 1s';
