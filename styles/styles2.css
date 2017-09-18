@@ -373,6 +373,7 @@ footer {
 @media all and (min-width: 550px){
 	.about {
 		grid-template-columns:repeat(7, 1fr);
+		padding: 1em 0 1em 0;
 	}
 
 	.profilePicture {
