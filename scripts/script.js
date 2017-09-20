@@ -1,13 +1,10 @@
 
 var portfolioLink = document.getElementById('portfolio-link');
+var portfolio = document.getElementById('portfolio');
 
 var contactLink = document.getElementById('contactLink');
 var modal = document.getElementById('modal');
 var close = document.getElementById('close');
-
-var home = document.getElementById('home-link');
-var about = document.getElementById('about-link');
-var portfolio = document.getElementById('portfolio');
 
 var description = document.querySelectorAll('.description');
 var portfolioModal = document.querySelectorAll('.portfolio-modal');
@@ -22,22 +19,15 @@ window.onbeforeunload = function(){
 	window.scrollTo(0, 0);
 }
 
-home.addEventListener('click', function(){
-	scrollTo(document.body, 0, 0);
-});
+/*
+var shiftWindow = function(){
+	scrollBy(0, -112);
+}
+if (location.hash) shiftWindow();
+window.addEventListener('hashchange', shiftWindow);
 
-about.addEventListener('click', function(){
-	scrollTo(document.body, 0, 98);
-});
+*/
 
-portfolioLink.addEventListener('click', function(){
-	var portfolio = document.getElementById('portfolio');
-	portfolio.scrollIntoView(true);
-	//var height = document.getElementById('home').offsetHeight;
-	
-    //portfolio.style.marginTop = '-' + height + 'px';
-    //portfolio.style.paddingTop = height + 'px';
- })
 
 contactLink.addEventListener('click', function(){
 	modal.classList.add('is-visible');
