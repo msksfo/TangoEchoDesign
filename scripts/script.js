@@ -1,6 +1,7 @@
 
 var portfolioLink = document.getElementById('portfolio-link');
-var portfolio = document.getElementById('portfolio');
+var homeLink = document.getElementById('home-link');
+var aboutLink = document.getElementById('about-link');
 
 var contactLink = document.getElementById('contactLink');
 var modal = document.getElementById('modal');
@@ -21,13 +22,23 @@ window.onbeforeunload = function(){
 
 /*
 var shiftWindow = function(){
-	scrollBy(0, -112);
+	scrollBy(0, -113);
 }
 if (location.hash) shiftWindow();
 window.addEventListener('hashchange', shiftWindow);
-
 */
 
+homeLink.addEventListener('click', function(){
+	window.scrollTo(0, 0);
+});
+
+aboutLink.addEventListener('click', function(){
+	window.scrollTo(0, (about.offsetTop - home.offsetHeight));
+});
+
+portfolioLink.addEventListener('click', function(){
+	window.scrollTo(0, (portfolio.offsetTop - home.offsetHeight));
+});
 
 contactLink.addEventListener('click', function(){
 	modal.classList.add('is-visible');

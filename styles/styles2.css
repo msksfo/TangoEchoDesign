@@ -31,12 +31,12 @@ nav {
 	grid-column: 5 / span 2;
 }
 
-nav a {
+nav li, nav a {
 	text-decoration: none;
 	color: rgba(255, 255, 255, .6);
 }
 
-nav a:hover {
+nav li:hover, nav a:hover {
 	color: purple;
 	opacity: 1;
 }
