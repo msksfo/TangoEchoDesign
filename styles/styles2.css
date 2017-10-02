@@ -204,6 +204,13 @@ nav li:hover, nav a:hover {
 	padding: 5px;
 }
 
+.six {
+	border: 1px solid white;
+	padding: 5px;
+	grid-column: 2;
+	grid-row: 6;
+}
+
 .hidexs {
 	display: none;
 }
@@ -472,6 +479,11 @@ footer {
 	.five {
 		grid-row: 3;
 		grid-column: 2;
+	}
+
+	.six {
+		grid-row: 3;
+		grid-column: 4;
 	}
 
 
