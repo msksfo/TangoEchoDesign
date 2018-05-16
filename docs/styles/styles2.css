@@ -16,43 +16,46 @@ nav {
 	padding: .5rem;
 }
 
+
 .nav-home {
 	grid-column: 1 / span 2;
 }
+
+
 .nav-about {
 	grid-column: 4 / span 2; 
 }
+
+
 .nav-portfolio {
 	grid-row: 2;
 	grid-column: 2 / span 2;
 }
+
+
 .nav-contact {
 	grid-row: 2;
 	grid-column: 5 / span 2;
 }
+
 
 nav li, nav a {
 	text-decoration: none;
 	color: rgba(255, 255, 255, .6);
 }
 
+
 nav li:hover, nav a:hover {
 	color: purple;
 	opacity: 1;
 }
 
-/*        Do I want this??????
-
-.active {
-	color: white;
-}
-
-*/
 
 .nav-item {
 	font-size: 1.5rem;
 	display: inline-block;
 }
+
 
 .logo {
 	text-shadow: 1px 1px 1px #545454;
@@ -65,6 +68,7 @@ nav li:hover, nav a:hover {
 	animation: borderFade 3s ease-in 1;
 }
 
+
 .airplane {
 	font-size: 3rem;
 	font-family: 'Zapf Dingbats';
@@ -75,15 +79,18 @@ nav li:hover, nav a:hover {
 	animation-fill-mode: forwards;
 }
 
+
 @keyFrames borderFade {
 	from { opacity: .3; }
 	to { opacity: 1; }
 }
 
+
 @keyFrames fly {
 	from{ transform: translate(-90px, 37px); }
 	to{ transform: translate(260px, 37px); }
 }
+
 
 .header {
 	box-shadow: inset 0 0 3px #545454;
@@ -109,6 +116,7 @@ nav li:hover, nav a:hover {
 	padding: .8em;
 }
 
+
 .profilePicture {
 	margin: 0 auto;
 	margin-bottom: 1.2rem;
@@ -130,23 +138,28 @@ nav li:hover, nav a:hover {
 	padding-bottom: 2.5em;
 }
 
+
 .image-container {
 	box-shadow: 0 0 5px black;
 }
+
 
 .portfolio p, .portfolio a {
 	color: rgba(255, 255, 255, .5);
 	text-decoration: none;
 }
 
+
 .position-relative > p {
 	margin-bottom: 1.7rem;
 	text-align: left;
 }
 
+
 .portfolio a:hover {
 	color: teal;
 }
+
 
 .portfolio h2 {
 	font-family: 'Cormorant SC', serif;
@@ -155,11 +168,13 @@ nav li:hover, nav a:hover {
 	margin-bottom: 3rem;
 }
 
+
 .grid {
 	display: grid;
 	grid-template-columns: 5% 90% 5%;
 	grid-row-gap: 3rem;
 }
+
 
 .image {
 	display: block;
@@ -176,12 +191,14 @@ nav li:hover, nav a:hover {
 	padding: 5px;
 }
 
+
 .two {
 	grid-column: 2;
 	grid-row 2;
 	border: 1px solid white;
 	padding: 5px;
 }
+
 
 .three {
 	grid-column: 2;
@@ -190,12 +207,14 @@ nav li:hover, nav a:hover {
 	padding: 5px;
 }
 
+
 .four {
 	grid-column: 2;
 	grid-row: 4;
 	border: 1px solid white;
 	padding: 5px;
 }
+
 
 .five {
 	grid-column: 2;
@@ -204,12 +223,14 @@ nav li:hover, nav a:hover {
 	padding: 5px;
 }
 
+
 .six {
 	border: 1px solid white;
 	padding: 5px;
 	grid-column: 2;
 	grid-row: 6;
 }
+
 
 .hidexs {
 	display: none;
@@ -225,6 +246,7 @@ nav li:hover, nav a:hover {
 	border: 1px solid #545454;
 }
 
+
 .portfolio-modal {
 	visibility: hidden;
 	opacity: 0;
@@ -236,6 +258,8 @@ nav li:hover, nav a:hover {
 	background-color: #545454;
 	z-index: 3;
 }
+
+
 .portfolio-modal p {
 	color: white;
 	opacity: 1;
@@ -244,6 +268,7 @@ nav li:hover, nav a:hover {
 	overflow: hidden;
 	font-size: 1rem;
 }
+
 
 .make-visible {
 	visibility: visible;
@@ -285,6 +310,7 @@ footer {
 	transition: all ease-out 1s;
 }
 
+
 .modalInner {
 	position: absolute;
 	text-align: center;
@@ -293,14 +319,18 @@ footer {
 	margin-top: 12px;
 }
 
+
 .modalInner h2 {
 	margin-top: 14px;
 	margin-bottom: 10px;
 }
+
+
 .modalInner p {
 	margin-top: .5em;
 	margin-bottom: .5em;
 }
+
 
 #close {
 	position: absolute;
@@ -313,9 +343,11 @@ footer {
 	cursor: pointer;
 }
 
+
 #close:hover {
 	color: purple;
 }
+
 
 .is-visible {
 	visibility: visible;
@@ -323,17 +355,21 @@ footer {
 	transform: scale(1);
 }
 
+
 .email {
 	font-style: italic;
 }
+
 
 .fa-envelope {
 	margin-right: 10px;
 }
 
+
 .icons {
 	text-align: center;
 }
+
 
 .icons i {
 	margin-left: 7px;
@@ -344,8 +380,8 @@ footer {
 /*--------------------------------  MEDIA QUERIES  ----------------------*/
 @media all and (min-width: 335px){
 	.hidexs {
-	display: inline;
-}
+		display: inline;
+	}
 
 }
 
@@ -360,13 +396,16 @@ footer {
 	.nav-home {
 		grid-column: 1;
 	}
+
 	.nav-about {
 		grid-column: 3; 
 	}
+
 	.nav-portfolio {
 		grid-row: 2;
 		grid-column: 2;
 	}
+
 	.nav-contact {
 		grid-row: 2;
 		grid-column: 4;
@@ -384,11 +423,13 @@ footer {
 		animation: borderFade 3s ease-in 1;
 	}
 
+
 	.header {
 		font-family: 'Cormorant SC', serif;
 		background-color: gray;
 		color: white;
 	}
+
 
 	@keyFrames fly {
 		from{ transform: translate(-90px, 37px); }
@@ -397,47 +438,37 @@ footer {
 
 }
 
+
 @media all and (min-width: 550px){
 	.about {
 		grid-template-columns:repeat(7, 1fr);
 		padding: 1em 0 1em 0;
 	}
 
+
 	.profilePicture {
 		float: right;
 		margin-left: 1rem;
 	}
 
+
 	.aboutText {
 		grid-column: 2 / -2;
 	}
+
 
 	#close {
 		right: 20px;
 	}
 
+
 	.position-relative > p {
-	text-align: center;
+		text-align: center;
 	}
 }
 
 @media all and (min-width: 600px){
-	/*
-	.nav-home {
-		grid-column: 1;
-	}
-	.nav-about {
-		grid-column: 2; 
-	}
-	.nav-portfolio {
-		grid-row: 1;
-		grid-column: 3;
-	}
-	.nav-contact {
-		grid-row: 1;
-		grid-column: 4;
-	}
-	*/
+	
 	nav {
 		display: flex;
 		justify-content: space-around;
@@ -457,29 +488,35 @@ footer {
 		padding: 0 1.4rem 1.4rem 1.4rem;
 	}
 
+
 	.grid {
 		grid-template-columns: 6.66% 40% 6.66% 40% 6.66%;
 		grid-row-gap: 5rem;
 	}
 
+
 	.two {
 		grid-column: 4;
 	}
+
 
 	.three {
 		grid-row: 2; 
 		grid-column: 2;
 	}
 
+
 	.four {
 		grid-row: 2;
 		grid-column: 4;
 	}
 
+
 	.five {
 		grid-row: 3;
 		grid-column: 2;
 	}
+
 
 	.six {
 		grid-row: 3;
@@ -490,6 +527,7 @@ footer {
 	.image-container {
 		transition: transform 1s ease;
 	}
+
 
 	.image-container:hover {
 		transform: scale(1.2);
@@ -506,38 +544,50 @@ footer {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 
+
 	.nav-home {
 		grid-column: 1;
 	}
+
+
 	.nav-about {
 		grid-column: 2; 
 	}
+
+
 	.nav-portfolio {
 		grid-row: 1;
 		grid-column: 3;
 	}
+
+
 	.nav-contact {
 		grid-row: 1;
 		grid-column: 4;
 	}
+
 
 	.header {
 		display: grid;
 		grid-template-columns: repeat(8, 1fr);
 	}
 
+
 	.nav-item {
 		padding-top: 1.56rem;
 		}
+
 
 	.logo {
 		grid-column: 1 / 4;
 		margin-bottom: 2.7rem;
 	}
 
+
 	.about {
 		grid-template-columns: 20% 60% 20%;
 	}
+
 
 	.aboutText {
 		grid-column: 2;
