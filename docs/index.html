@@ -1,139 +1,80 @@
 <!DOCTYPE html>
 <html lang='en'>
-
 	<head>
-		<meta charset='utf-8'>
-		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<title>TangoEcho Design</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Portfolio Site</title>
 
-		<!-- font awesome icons -->
-		<script src="https://use.fontawesome.com/4047a077a3.js"></script>
-
-		<!-- links for my styling and google fonts -->
-		<link rel='stylesheet' href='styles/styles2.css'>
-		<link href="https://fonts.googleapis.com/css?family=Cormorant+SC|Lato" rel="stylesheet">
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
 
 	<body>
-		<header class="header" id='home'>
-		  <div class="logo"><span class='airplane'>&#x2708</span>TangoEcho Design</div>
-		  <nav>
-		    <li id='home-link' class="nav-item active nav-home">Home</li>
-		    <li id='about-link' class="nav-item nav-about">About</li>
-		    <li id='portfolio-link' class="nav-item nav-portfolio">Portfolio</li>
-		    <a href="#" class="nav-item nav-contact" id='contactLink' >Contact</a>
-		  </nav>
+		<header>
+			<figure class='logo-figure'>
+				<img class="logo" src="images/logo.png" alt="TanogEcho Design">
+			</figure>
+
+			<div class="title">
+				<h1>Tia Esguerra</h1>
+				<h2>Web Developer</h2>
+			</div>
 		</header>
 
+		<figure class="hero">
+			<img class="hero-img" src="images/code.png" alt="Html code of this page">
+		</figure>
 
-		<main class='mainContent'>
-			<div class='about' id='about'>
-				<article class='aboutText'>
-					<p><img class='profilePicture' src='images/profile-pic.jpg' alt='Tia in the Super Decathalon'>Hi. My name is Tia. Tango and Echo are the initials of my first and last name, as assigned by the <abbr title='North Atlantic Treaty Organization'>NATO</abbr> phonetic alphabet. This is the alphabet used in the aviation industy. I currently work with American Airlines at San Francisco International Airport. I applied for this job because I love traveling. At the time of my application, I couldn't tell the difference between a 737 and an A320. Some time passed. I traveled a lot. Then I married a pilot, and, well...aviation grows on you. We've been to all seven continents, which is meaningless but kind of cool at the same time. Aviation will always be a part of my life, which is why I decided to use Tango Echo in my design name.</p>
+		<section class="about-section">
+			<h2>About Me</h2>
+			<div class="about-grid">
+				<div class="about-text">
+					<p>I'm Tia, a web developer interested in learning more about both react and angular. I began this journey because I was looking for an intellectual challenge with a creative twist. I really enjoy taking an idea and nurturing it, working through the problems, creating the solutions while trying new things, and eventually developing it into a really cool application that people can use. I strive to write clean, modular code, that is also responsive and accessible. I thrive when being part of a team that values diversity and creativity.</p>
+					<p>Aside from programming, I also enjoy travelling, music, photography, baking, reading, and so many more things.</p>
+				</div> <!-- close .about-text -->
+				<p class="quote-wrapper">
+					<span><q>Be fearless in the pursuit of what sets your soul on fire.</q></span> <span>~ Jennifer Lee</span>
+				</p>
+			</div> <!-- close .about-grid -->
+		</section> <!-- close .about-section -->
 
-					<p>I'm currently studying web development and I plan to seek full time employment in this field in 2018. Why am I leaving the airline industry? While I've enjoyed my time there, I'm nearly elgible to keep, for life, the flight benefits that I've worked so hard for. This has been my goal from day one. Having reached that goal, I'd like to pursue a job that offers more of an intellectual challenge. One of the reasons that tech appeals to me is because it's constantly changing, growing. I will never be finished learning. My brain will never be bored. </p>
+		<section class="featured-work-section">
+			<h2>Featured Work</h2>
+			<div class="work-examples">
 
-					<p>My educational background is in piano performance. Now at first it seems like music and programming have nothing in common whatsoever. But look beneath the surface, and you'll see how well skills developed in the practice room translate to programming. From being a musician I learned dedication, persistence, consistency. I learned *how* to practice (learned how to learn, in other words). I learned how to make goals, manage my time, how to collaborate with others. If these are too broad, how about pattern recognition, intense focus on the details while keeping in mind how they fit into the bigger picture. These skills sound very much like the skills that make a good progammer.</p>
-				</article>
-			</div>
+				<figure>
+					<img class="work-example" src="images/aroundTheWorld.png" alt="Around The World project">
+					<figcaption>
+						<h3 class="work-example-title">Around The World</h3>
+						<a class="work-example-link" href="https://msksfo.github.io/AroundTheWorld/" target="_blank" rel="noopener">https://msksfo.github.io/AroundTheWorld/</a>
+					</figcaption>
+				</figure>
 
-			<section class='portfolio' id='portfolio'>
-				<h2 id='portfolio-title'>Portfolio</h2>
-				<div class='grid'>
-					<div class='image-container one'>
-						<img class='image' src='images/AroundTheWorld.png' alt='Preview pic of the Around The World Image Gallery Website'>
-						<div class='position-relative'>
-							<p><span class='description'>Description</span> | <a href='https://github.com/msksfo/AroundTheWorld' target='_blank'>Github</a> <span class='hidexs'>|</span> <a href='https://msksfo.github.io/AroundTheWorld/' target='_blank'>Website</a></p>
-							<div class='portfolio-modal'>
-								<p>A photo gallery using HTML5, CSS3, Javascript, and JS Lightbox.</p>
-							</div>
-						</div>
-					</div>
+				<figure>
+					<img class="work-example" src="images/calculator.png" alt="Calculator project">
+					<figcaption>
+						<h3 class="work-example-title">Calculator</h3>
+						<a class="work-example-link" href="https://msksfo.github.io/calculator/" target="_blank" rel="noopener">https://msksfo.github.io/calculator/</a>
+					</figcaption>
+				</figure>
 
-					<div class='image-container two'>
-						<img class='image' src='images/memoryGame.png' alt='Preview pic of the plane spotting memory game'>
-						<div class='position-relative'>
-							<p><span class='description'>Description</span> | <a href='https://github.com/msksfo/udacity-fend/tree/master/projects/memoryGame' target='_blank'>Github</a> <span class='hidexs'>|</span> <a href='https://msksfo.github.io/udacity-fend/projects/memoryGame/index.html' target='_blank'>Website</a></p>
-							<div class='portfolio-modal'>
-								<p>The classic game of concentration, with an aviation twist.</p>
-							</div>
-						</div>
-					</div>
+				<figure>
+					<img class="work-example" src="images/concentration.png" alt="Language Translation project">
+					<figcaption>
+						<h3 class="work-example-title">Concentration</h3>
+						<a class="work-example-link" href="https://msksfo.github.io/HowDoYouSay/" target="_blank" rel="noopener">https://msksfo.github.io/udacity-fend/projects/memoryGame/index.html</a>
+					</figcaption>
+				</figure>
 
-					<div class='image-container three'>
-						<img class='image' src='images/FamilyWebsite.png' alt='Preview pic of the Esguerra Family Website'>
-						<div class='position-relative'>
-							<p><span class='description'>Description</span> | <a href='https://github.com/msksfo/Esguerra' target='_blank'>Github</a> <span class='hidexs'>|</span> <a href='https://msksfo.github.io/Esguerra/' target='_blank'>Website</a></p>
-							<div class='portfolio-modal'>
-								<p>A family website I made to learn HTML5, CSS3, and Bootstrap.</p>
-							</div>
-						</div>
-					</div>
+				<figure>
+					<img class="work-example" src="images/translate.png" alt="Language Translation project">
+					<figcaption>
+						<h3 class="work-example-title">Language Translation</h3>
+						<a class="work-example-link" href="https://msksfo.github.io/HowDoYouSay/" target="_blank" rel="noopener">https://msksfo.github.io/HowDoYouSay/</a>
+					</figcaption>
+				</figure>
 
-					<div class='image-container four'>
-						<img class='image' src='images/CirrusApp.png' alt="Preview pic of Cirrus' weather app.">
-						<div class='position-relative'>
-							<p><span class='description'>Description</span> | <a href='https://github.com/msksfo/Cirrus--Weather-App' target='_blank'>Github</a> <span class='hidexs'>|</span> <a href='https://msksfo.github.io/Cirrus--Weather-App/' target='_blank'>Website</a></p>
-							<div class='portfolio-modal'>
-								<p>Weather app using the apixu weather api. It features our adorable cat, Cirrus.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class='image-container five'>
-						<img class='image' src='images/random-quote-generator.png' alt='Preview Pic of the random quote generator app.'>
-						<div class='position-relative'>
-							<p><span class='description'>Description</span> | <a href='https://github.com/msksfo/Random-Quote-Generator' target='_blank'>Github</a> <span class='hidexs'>|</span> <a href='https://msksfo.github.io/Random-Quote-Generator' target='_blank'>Website</a></p>
-							<div class='portfolio-modal'>
-								<p>Random quote generator which also gives the user the option to tweet the quote.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class='image-container six'>
-						<img class='image' src='images/calculator.png' alt='Preview pic of a javascript calculator.'>
-						<div class='position-relative'>
-							<p><span class='description'>Description</span> | <a href='https://github.com/msksfo/calculator' target='_blank'>Github</a> <span class='hidexs'>| </span><a href='https://msksfo.github.io/calculator/' target='_blank'>Website</a></p>
-							<div class='portfolio-modal'>
-							<p>A simple javascript calculator that will add, subtract, multiply, and divide two numbers.</p>
-						</div>
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<footer>
-				<p>Copyright &copy; 2018 TangoEcho Design All Rights Reserved</p>
-			</footer>
-
-		</main>
-
-		<div class='modal' id='modal'>
-			<div id='close'>X</div>
-
-			<div class='modalInner'>
-				
-				<div>
-					<h2> <i class='fa fa-envelope' aria-hidden='true'></i>Get In Touch</h2>
-				</div>
-
-				<div>
-					<p>Feel free to get in touch if you'd like to see my resume or references, discuss how I can be of value to your team, or even if you just need some travel tips. I can be reached at <span class='email'>msksfo@gmail.com</span>, or through any of the social links below. </p>
-				</div>
-
-				<div class='icons'>
-					<a href='https://www.linkedin.com/in/tia-esguerra' target='_blank'><i class='fa fa-2x fa-linkedin-square' aria-hidden='true'></i></a>
-					<a href='https://www.instagram.com/cirrusthekat' target='_blank'><i class='fa fa-2x fa-instagram' aria-hidden='true'></i></a>
-					<a href='https://www.facebook.com/tia.andersonesguerra' target='_blank'><i class='fa fa-2x fa-facebook-square' aria-hidden='true'></i></a>
-				</div>
-				
-			</div>
-
-		</div>
-
-		<script src='scripts/script.js'></script>
+			</div> <!-- close .work-examples -->
+		</section> <!-- close .featured-work-section -->
 
 	</body>
-
 </html>
