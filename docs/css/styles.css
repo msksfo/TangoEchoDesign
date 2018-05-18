@@ -1,0 +1,398 @@
+body {
+	box-sizing: border-box;
+	min-height: 100vh;
+	max-width: 1200px;
+	font-family: sans-serif;
+	margin: 0 1rem;
+}
+
+
+:root {
+	--almost-black: #2d3c49;
+	--hot-pink: #c62079;
+	--light-gray:  #a0b3c4;
+	--active-link: #5f8c4e;
+	--visited-link: #e974b3;
+}
+
+/* =================== HEADER ==================== */
+
+header {
+	border-bottom: 3px solid var(--hot-pink);
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 0.5rem;
+	padding: 1rem 0;
+}
+
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+
+h1 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	letter-spacing: 1.3px;
+	margin: 0 0 0.2rem 0;
+	color: var(--almost-black);
+	text-transform: uppercase;
+}
+
+
+h2 {
+	font-size: 1.2rem;
+	font-weight: 300;
+	margin: 0.2rem 0 0 0;
+	color: var(--almost-black);
+	text-transform: uppercase;
+}
+
+
+.logo-figure {
+	margin: 0;
+	padding: 0;
+	width: 100px;
+
+	/* center the logo vertically in the figure */
+	display: flex;
+	align-items: center;
+}
+
+
+.logo {
+	max-width: 100%;
+}
+
+
+/* ==================== HERO IMAGE ==================== */
+
+.hero {
+	margin: 2rem 0;
+	padding: 0;
+	position: relative;
+	height: 400px;
+}
+
+
+.hero-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: invert(.2);
+}
+
+/* =============== ABOUT ME SECTION ======================= */
+
+.about-section {
+	margin: 2.5rem 0 50px 0;
+	position: relative; /* use position relative for the pseudo element to work properly */
+}
+
+
+/* this creates the left border on the about section */
+.about-section::before {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 3px;
+	background: linear-gradient(#c62079, #fef8fb);
+}
+
+
+.about-grid {
+	display: grid;
+}
+
+
+.about-text {
+	order: 2;
+}
+
+
+.quote-wrapper {
+	order: 1;
+	padding: 1rem;
+	justify-self: center;
+	align-self: center;
+	font: 1.4rem cursive;
+}
+
+
+.about-section h2 {
+	margin: 1rem 0;
+	color: var(--light-gray);
+	font-size: 2rem;
+	text-transform: inherit;
+	font-weight: 300;
+	padding-left: 1rem;
+}
+
+
+.about-section p {
+	color: var(--almost-black);
+	padding: 0 1rem;
+	line-height: 1.5;
+}
+
+/* =============== FEATURED WORK SECTION ================== */
+
+/* the figures in this section need position relative for the modal positioning when 'description' is clicked */
+.modal-parent {
+	position: relative;
+}
+
+
+.featured-work-section {
+	margin: 2.5rem 0;
+	padding-bottom: 1rem;
+}
+
+
+.featured-work-section h2 {
+	text-transform: inherit;
+	margin-bottom: 1rem;
+	padding-left: 1rem;
+	font-size: 2rem;
+	color: var(--light-gray);
+	font-weight: 300;
+}
+
+
+.work-examples {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 25px;
+}
+
+
+.work-examples figure {
+	margin: 0;
+	border: 1px solid rgba(0, 0, 0, .3);
+	padding-bottom: .5rem;
+}
+
+
+.work-example {
+	max-width: 100%;
+}
+
+
+figcaption {
+	text-align: center;
+}
+
+
+/* the div with with options to view a description of the project, the live link, or the code on github */
+.info {
+	margin-top: 3rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.right-border {
+	border-right: 1px solid var(--light-gray);
+}
+
+
+.work-example-title {
+	color: var(--almost-black);
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+
+/* make all links in the .info div of figcaption (description, website, and github) the almost-black color */
+.description {
+	color: var(--almost-black);
+}
+
+
+.work-example-link {
+	text-decoration: none;
+	color: var(--almost-black);
+}
+
+
+.description:hover,
+.description:focus,
+.work-example-link:focus,
+.work-example-link:hover {
+	color: var(--hot-pink);
+	cursor: pointer;
+}
+
+
+.work-example-link:active {
+	color: var(--active-link);
+}
+
+/* =============== MODAL STYLES ========= */
+
+
+/* the modal that appears when 'description' is clicked */
+.description-modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .9);
+	z-index: 5;
+	display:flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	color: white;
+	overflow: scroll;
+
+	/* the modal is initially hidden */
+	width: 0;
+	height: 0;
+	transition: all .6s ease;
+}
+
+
+/* the modal will slide in diagonally when user clicks description */
+.show-modal {
+	height: 100%;
+	width: 100%;
+}
+
+
+.close-modal {
+	font-size: 2.3rem;
+	padding: 0 1rem;
+	margin-left: auto;
+	align-self: flex-start;
+	opacity: 0;
+	/* when the show-modal transition completes, the 'X' will quickly become visible. */
+	transition: opacity .8s ease .45s, color 0.2s ease;
+}
+
+
+.close-modal:hover {
+	color: red;
+	cursor: pointer;
+}
+
+
+.description-text {
+	letter-spacing: 1px;
+	line-height: 1.5;
+	text-align: center;
+	padding: 0.5rem;
+	opacity: 0;
+	/* when the show-modal transition completes, the description text will quickly become visible. */
+	transition: all .8s ease .45s;
+}
+
+
+/* ================= FOOTER STYLES ================ */
+
+footer {
+	margin-bottom: 1rem;
+	background-color: #529BAE;
+	color: white;
+	font-weight: 300;
+	letter-spacing: 0.2px;
+	line-height: 1.8;
+}
+
+.copyright {
+	margin-top: 3rem;
+	text-align: center;
+	padding-bottom: 0.7rem;
+}
+
+.contact {
+	padding-top: 1.5rem;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+
+.social-link {
+	color: white;
+	padding: 0.5rem;
+	transition: color .2s ease;
+}
+
+.social-link:hover,
+.social-link:focus {
+	color: var(--hot-pink);
+}
+
+/* ================= MEDIA QUERIES =================== */
+
+@media (min-width: 550px){
+	h1 {
+		font-size: 1.8rem;
+		letter-spacing: 3px;
+	}
+
+
+	h2 {
+		font-size: 1.4rem;
+		letter-spacing: 1.1px;
+	}
+}
+
+
+@media (min-width: 680px){
+
+	h1 {
+		font-weight: 400;
+		font-size: 2rem;
+	}
+
+
+	.about-section {
+		margin: 90px 0;
+	}
+
+
+}
+
+@media (min-width: 800px){
+
+	.about-section h2 {
+		margin-bottom: 0;
+	}
+
+
+	.about-grid {
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 20px;
+
+	}
+
+
+	.about-text {
+		order: 0;
+		grid-column: 1 / 4;
+	}
+
+
+	.quote-wrapper {
+		order: 0;
+		grid-column: 4 / -1;
+		justify-self: center;
+		align-self: center;
+	}
+
+}
+
+@media (min-width: 1200px){
+
+	body {
+		margin: 0 auto;
+	}
+}
