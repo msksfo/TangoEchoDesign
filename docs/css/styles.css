@@ -10,9 +10,11 @@ body {
 :root {
 	--almost-black: #2d3c49;
 	--hot-pink: #c62079;
-	--light-gray:  #a0b3c4;
+	--light-gray:  #7b98ad;
+	--prettier-light-gray: #a0b3c4;
 	--active-link: #5f8c4e;
 	--visited-link: #e974b3;
+	--airplane-blue: #318ba2;
 }
 
 /* =================== HEADER ==================== */
@@ -245,7 +247,7 @@ figcaption {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: rgba(0, 0, 0, .9);
+	background: rgba(0, 0, 0, 0.9);
 	z-index: 5;
 	display:flex;
 	flex-direction: column;
@@ -268,17 +270,23 @@ figcaption {
 
 
 .close-modal {
-	font-size: 2.3rem;
-	padding: 0 1rem;
-	margin-left: auto;
+	font-size: 1.8rem;
+	border: none;
+	background: rgba(0, 0, 0, 0.01);
+	color: white;
+
+	/* push button all the way right with margin-left set to auto */
+	margin: 5px 5px 0 auto;
 	align-self: flex-start;
 	opacity: 0;
+
 	/* when the show-modal transition completes, the 'X' will quickly become visible. */
 	transition: opacity .8s ease .45s, color 0.2s ease;
 }
 
 
-.close-modal:hover {
+.close-modal:hover,
+.close-modal:focus {
 	color: red;
 	cursor: pointer;
 }
@@ -299,7 +307,7 @@ figcaption {
 
 footer {
 	margin-bottom: 1rem;
-	background-color: #529BAE;
+	background: #2d8095;
 	color: white;
 	font-weight: 300;
 	letter-spacing: 0.2px;
